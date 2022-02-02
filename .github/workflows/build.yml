@@ -30,7 +30,7 @@ jobs:
 
     - run: cd ${{ github.workspace }}
     - run: ls
-    - run: npm run build:android
+    - run: npm run web:build
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
 #       env:
