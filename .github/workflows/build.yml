@@ -31,8 +31,8 @@ jobs:
     - run: cd ${{ github.workspace }}
     - run: ls
     - run: npm run web:build
-    - run: cd ${{ github.workspace }}/web
-    - run: ls
+    - run: ls ${{ github.workspace }}/web
+    - run: ls ${{ github.workspace }}/web/build
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
 #       env:
