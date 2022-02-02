@@ -27,6 +27,9 @@ jobs:
 #       env:
 #         ARTIFACTORY_EMAIL: ${{ secrets.ARTIFACTORY_EMAIL }}
 #         ARTIFACTORY_NPM_AUTH_PASSWORD: ${{ secrets.ARTIFACTORY_NPM_AUTH_PASSWORD }}
+
+    - run: cd ${{ github.workspace }}
+    - run: ls
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
 #       env:
